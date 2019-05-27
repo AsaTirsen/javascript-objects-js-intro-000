@@ -6,9 +6,8 @@ function updatePlaylist(playlist, artistName, songTitle) {
 }
 
 function removeFromPlaylist(playlist, artistName) {
-  //var playlist = {"artistName": "songTitle"};
-  //var newPlaylist = delete playlist.artistName;
-  //return newPlaylist;
-  delete playlist[artistName];
-  return playlist;
+  var newPlaylist = delete playlist.artistName;
+  return newPlaylist;
+  // delete playlist[artistName];
+  // return playlist;
 }
